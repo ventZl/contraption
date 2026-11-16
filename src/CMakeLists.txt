@@ -1,0 +1,26 @@
+
+add_application(contraption
+    api.c
+    server.c
+    mouse.c
+    keyboard.c
+    gadget.c
+    resources.c
+    render.c
+    window.c
+    client.c
+    desktop.c
+    dock.c
+    dock_win.c
+    gadgets/titlebar.c
+    gadgets/button.c
+    gadgets/menuitem.c
+    gadgets/text.c
+    gadgets/panel.c
+    gadgets/pixmap.c
+    pixmap.c
+    )
+
+target_link_libraries(contraption PRIVATE stdlib)
+target_include_directories(contraption PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(contraption PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../include)
