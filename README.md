@@ -153,18 +153,21 @@ window. Following is the list of gadget types Contraption currently supports:
 This gadget represents pushbutton with text label. This button can be 
 pressed, released and disabled. Event can be generated when the button is
 pressed.
+
 ![button](doc/button.png)
 
 ### TEXT
 
 Plain, passive text. Color, font size and font effects (bold, italic) can be
 set. Text can't generate any events.
+
 ![text](doc/text.png)
 
 ### TITLE BAR
 
 Window title bar. This gadget implements window dragging and is automatically
 resized when window resizes. Contraption will also place it on top of window.
+
 ![titlebar](doc/titlebar.png)
 
 ### RADIO
@@ -183,6 +186,7 @@ Text input is single-line input box user can change its value.
 ### MENU ITEM
 
 Menu items in menu bars and drop-down menus.
+
 ![menu](doc/menu.png)
 
 ### PANEL
@@ -192,6 +196,7 @@ Panel that can be used to visually group gadgets. It has no other function.
 ### PIXMAP
 
 Image. Client must upload pixmap into server and then pass pixmap ID to the gadget.
+
 ![pixmap](doc/pixmap.png)
 
 ### HIDDEN
